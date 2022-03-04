@@ -379,4 +379,8 @@ body {
   .actioncard {
     width: 100%;
   }
+
+  .texts > p {
+    width: 100%;
+  }
 }
