@@ -8,6 +8,32 @@
     <title>Document</title>
   </head>
   <body class="container">
+
+    <header class="mobile-header">
+
+      <div class="burgercontainer">
+         
+        <div class="burger" onclick="showmenu()">☰</div>
+        <!-- <button onclick="showmenu()">dfsfds</button> -->
+      </div>
+      
+      <div id="mobile-menu">
+        <nav>
+          <ul>
+            <li><a href="/hike-test/index">Home</a></li>
+
+            <li><a href="/hike-test/about">About</a></li>
+  
+            <li><a href="/hike-test/contact">Contact</a></li>
+  
+            <li><a href="/hike-test/join">Events</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+    </header>
+
     <header class="main-header">
       <nav>
         <ul>
@@ -33,28 +59,36 @@
 
     <div class="main">
       <div class="mainl">
-
         <form>
-            <div class="contact-container">
-              <label> Name : </label>
-              <input type="text" id="lname" name="lastname" />
-              <label> Email : </label>
-              <input type="text" id="lname" name="lastname" />
-              <label> subject : </label>
-              <textarea> </textarea>
-              <button class="action-contact">Submit Now</button>
-            </div>
-          </form>
-
-    
+          <div class="contact-container">
+            <label> Name : </label>
+            <input type="text" id="lname" name="lastname" />
+            <label> Email : </label>
+            <input type="text" id="lname" name="lastname" />
+            <label> subject : </label>
+            <textarea> </textarea>
+            <button class="action-contact">Submit Now</button>
+          </div>
+        </form>
       </div>
       <div class="mainr">
         <div class="texts">
-            <h1 class="title">Swift Customer support</h1>
-            <span class="subtitle"> send all your questions over to us!</span>
-          </div>
-    
+          <h1 class="title">Swift Customer support</h1>
+          <span class="subtitle"> send all your questions over to us!</span>
+        </div>
       </div>
     </div>
   </body>
+
+  <script>
+    function showmenu() {
+      console.log("hello")
+      var x = document.getElementById("mobile-menu");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+    }
+  </script>
 </html>
